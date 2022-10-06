@@ -1,24 +1,24 @@
-#API Personal Fake Data
+# API Personal Fake Data
 
 
-##Environment
-###Run activate env: 
+## Environment
+### Run activate env: 
 `source ./env/bin/activate`
 
-###Run deactivate env: 
+### Run deactivate env: 
 `deactivate`
 
 
-##API with uvicorn
+## API with uvicorn
 Run:
 `pip install -r requirements.txt`
 `python -m uvicorn main:app --reload`
 
 
-###Request
+### Request
 `curl --location --request GET 'http://localhost:8000/fake-personal-data'`
 
-###Response
+### Response
 ```
 {
     "Nombre": "Lourdes",
