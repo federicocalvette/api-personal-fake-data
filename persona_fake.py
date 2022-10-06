@@ -13,6 +13,14 @@ class Persona():
     
     
     def __init__(self):
+        """
+        Description of __init__: contructor de la clase Persona
+
+        Args:
+            self (undefined):
+
+        """
+                
 
         # Genero para nombre.
         self.genero_form = genero.get_genero()
@@ -21,8 +29,7 @@ class Persona():
         self.codigo_pais = lenguaje.get_lenguaje()
 
         # Info del país seleccionado.
-        self.json_pais = pais.get_id_pais(self.codigo_pais)
-        self.nombre_pais = self.json_pais.get('Country')
+        self.nombre_pais = pais.get_pais(self.codigo_pais)
 
         # Localidad
         self.json_localidad = main_localidad.get_json_localidad(self.nombre_pais)
@@ -53,7 +60,12 @@ class Persona():
         self.fecha_nacimiento = info_nacimiento.get('fecha_nacimiento')
 
     def get_fake_person(self):
+        """Generador de la respuesta 
 
+        Returns:
+            json: json con la info de la persona fake
+        """        
+    
         response = {
             'Nombre': self.nombre_form,
             'Apellidos': {

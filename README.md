@@ -11,6 +11,7 @@
 
 ##API with uvicorn
 Run:
+`pip install -r requirements.txt`
 `python -m uvicorn main:app --reload`
 
 

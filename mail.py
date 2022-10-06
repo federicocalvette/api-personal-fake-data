@@ -11,7 +11,7 @@ correo_tipo = random.randrange(15)
 
 
 def get_random_mail(nombre, apellido, empresa):
-    """get_random_mail
+    """get_random_mail: Funcion para generar el mail 
 
     Args:
         nombre (str): Nombre para crear el mail
