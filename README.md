@@ -1,5 +1,7 @@
 # API Personal Fake Data
 
+First run:
+`mv API_coutries/example.configs.py API_coutries/configs.py`
 
 ## Environment
 ### Run activate env: 
