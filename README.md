@@ -14,8 +14,13 @@ First run:
 ## API with uvicorn
 Run:
 `pip install -r requirements.txt`
-`python -m uvicorn main:app --reload`
+`python3 -m uvicorn main:app --reload`
 
+### Docu
+`http://127.0.0.1:8000/docs`
+
+### Example docu:
+<img src="./img/docs_example.png" alt="Docu img"/>
 
 ### Request
 `curl --location --request GET 'http://localhost:8000/fake-personal-data'`
